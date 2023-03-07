@@ -1,0 +1,19 @@
+{
+  "name": "travel",
+  "version": "1.0.0",
+  "description": "Landing page useing tailwind",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joseangelayalaz/travel.git"
+  },
+  "author": "Jose Angel Ayala Zamora",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/joseangelayalaz/travel/issues"
+  },
+  "homepage": "https://github.com/joseangelayalaz/travel#readme"
+}
