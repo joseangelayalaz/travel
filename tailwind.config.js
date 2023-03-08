@@ -39,4 +39,5 @@ module.exports = {
     },
   },
   plugins: [],
+  base: "/travel/"
 }
