@@ -11,9 +11,10 @@
     <title>World Travel</title>
 </head>
 <body class="font-Montserrat dark:bg-gray-900">
-    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between dark:bg-gray-800">
+    <nav class="w-full h-14 hidden bg-white lg:flex p-4 justify-between  dark:bg-gray-800">
         <div class="h-auto w-auto">
             <p class="text-xl text-principal font-black dark:text-white">Travel</p>
+            
         </div>
         <div class="flex space-x-8">
             <a class="font-bold text-base text-primary dark:text-white" href="#recomendadas"><p>Locations</p></a>
@@ -28,7 +29,7 @@
                 </svg>
             </a>
 
-            <button>
+            <button id="toggle" onclick="toggleDark()">
                 <svg width="20" height="20" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path class="fill-current text-principal" d="M15.293 11.293C13.8115 11.9631 12.161 12.1658 10.5614 11.8742C8.96175 11.5826 7.48895 10.8105 6.33919 9.66079C5.18944 8.51104 4.41734 7.03824 4.12574 5.4386C3.83415 3.83897 4.03691 2.18846 4.70701 0.70697C3.52758 1.23998 2.49505 2.05117 1.69802 3.07093C0.900987 4.09069 0.363244 5.28859 0.130924 6.56186C-0.101395 7.83512 -0.0213565 9.14574 0.364174 10.3813C0.749705 11.6168 1.42922 12.7404 2.34442 13.6556C3.25961 14.5708 4.38318 15.2503 5.61871 15.6358C6.85424 16.0213 8.16486 16.1014 9.43813 15.8691C10.7114 15.6367 11.9093 15.099 12.9291 14.302C13.9488 13.5049 14.76 12.4724 15.293 11.293Z" fill="#3F3F46"/>
                 </svg>
@@ -54,7 +55,7 @@
             </div>
         </div>
         <div class="p-6 " id="recomendadas">
-            <p class="text-3xl font-semibold text-principal dark:text-white">Recomendados</p>
+            <p class="text-3xl font-semibold text-principal dark:text-white">Our Recomendations</p>
             <div class="w-auto h-72 item-center mt-6 overflow-x-auto overscroll-x-contain flex space-x-6 overflow-y-hidden">
                 <div class="Card">
                     <div class="w-full h-3/5 rounded-t-lg bg-norway bg-cover"></div>
@@ -155,28 +156,29 @@
             </div>
         </div>
         <div class="px-10 h-auto w-full" id="rentas_destacadas">
-            <p class="text-3xl text-principal font-semibold pb-6 dark:text-white">Rentas Destacadas</p>
+            <p class="text-3xl text-principal font-semibold pb-6 dark:text-white">Trending Stays</p>
+            
             <div class="w-full flex flex-col space-y-6 item-center justify-center ">
                 <div class="w-full h-96 bg-chicago bg-cover rounded-xl sm:bg-center CardRecom">
                     <p class="CardTitle">Chicago</p>
-                    <p class="text-sm sm:text-lg pl-8 text-white mr-24">2 Habitaciones, baño y cocina</p>
+                    <p class="text-sm sm:text-lg pl-8 text-white mr-24">2 Bedrooms, bathroom y kitchen</p>
                 </div>
 
                <div class="sm:flex sm:flex-row lg:h-full">
                     <div class="w-full h-96 bg-LA bg-cover rounded-xl mb-6 sm:mb-0 sm:w-2/5 sm:h-auto sm:mr-6 CardRecom">
                         <p class="CardTitle">Los Angeles</p>
-                        <p class="text-sm sm:text-lg pl-8 text-white mr-24">2 Habitaciones, baño y cocina</p>
+                        <p class="text-sm sm:text-lg pl-8 text-white mr-24">2 Bedrooms, bathroom y kitchen</p>
                     </div>
 
                     <div class="space-y-6 sm:w-3/5 sm:h-auto">
                         <div class="w-full h-96 bg-miami bg-cover rounded-xl CardRecom">
                             <p class="CardTitle">Miami</p>
-                            <p class="text-sm sm:text-lg pl-8 text-white mr-24">2 Habitaciones, baño y cocina</p>
+                            <p class="text-sm sm:text-lg pl-8 text-white mr-24">2 Bedrooms, bathroom y kitchen</p>
                         </div>
 
                         <div class="w-full h-96 bg-bali bg-cover rounded-xl CardRecom">
                             <p class="CardTitle">Bali</p>
-                            <p class="text-sm sm:text-lg pl-8 text-white mr-24">2 Habitaciones, baño y cocina</p>
+                            <p class="text-sm sm:text-lg pl-8 text-white mr-24">2 Bedrooms, bathroom y kitchen</p>
                         </div>
                     </div>
                </div>
@@ -187,32 +189,25 @@
             <div class="w-full h-full px-6 flex flex-col space-y-4">
                 <p class="text-3xl text-principal font-semibold dark:text-white">FAQS</p>
                 <div>
-                    <p class="text-xl font-medium text-principal dark:text-white">Politica de cancelacion</p>
-                    <p class="text-base pt-2 dark:text-white">Para estancias menores a una semana es importante avisar con 3 días de
-                        anticipación, de caso contario será sancionado.</p>
+                    <p class="text-xl font-medium text-principal dark:text-white">Payment Methods</p>
+                    <p class="text-base pt-2 dark:text-white">We accept VISA, MasterCard, American Express, Paypal and Binance, We accept VISA, 
+                        MasterCard, American Express, Paypal and Binance.</p>
+                </div>
+               
+                <div>
+                    <p class="text-xl font-medium text-principal dark:text-white">Pets</p>
+                    <p class="text-base pt-2 dark:text-white">Free to choose.</p>
                 </div>
                 <div>
-                    <p class="text-xl font-medium text-principal dark:text-white">Métodos de pago</p>
+                    <p class="text-xl font-medium text-principal dark:text-white">Security Informaction</p>
                     <p class="text-base pt-2 dark:text-white">
-                        Aceptamos distintos métodos de pago: VISA, MasterCard, American Express,
-                        Paypal y Binance
+                        We count with inssurence in case of accidents.
                     </p>
                 </div>
                 <div>
-                    <p class="text-xl font-medium text-principal dark:text-white">Mascotas</p>
-                    <p class="text-base pt-2 dark:text-white">El tema de las mascotas dependerá directamente del anfitrión.</p>
-                </div>
-                <div>
-                    <p class="text-xl font-medium text-principal dark:text-white">Información de Seguridad</p>
+                    <p class="text-xl font-medium text-principal dark:text-white">Long Stayments</p>
                     <p class="text-base pt-2 dark:text-white">
-                        Todas nuestras estancias cuentan con seguro en caso de accidentes
-                    </p>
-                </div>
-                <div>
-                    <p class="text-xl font-medium text-principal dark:text-white">Estancias Largas</p>
-                    <p class="text-base pt-2 dark:text-white">
-                        Contamos con estancias de hasta 3 meses, en este caso es requerido un
-                        anticipo con un monto del 50% del valor de la renta
+                        We count with 3 month stayment, with 50% of discount.
                     </p>
                 </div>
             </div>
@@ -220,10 +215,10 @@
     </section>
     <footer id="aboutus" class="w-full h-auto bg-gray-50 px-6 space-y-3 mt-6 pb-20 pt-4">
         <p class="text-lg  dark:text-gray-500">About Us</p>
-        <p class="text-sm text-gray-300 dark:text-gray-400">Inversionistas</p>
-        <p class="text-sm text-gray-300 dark:text-gray-400">Empleos</p>
-        <p class="text-sm text-gray-300 dark:text-gray-400">Términos y condiciones</p>
-        <p class="text-sm text-gray-300 dark:text-gray-400">Platzi Travel, Inc.</p>
+        <p class="text-sm text-gray-300 dark:text-gray-400">Investors</p>
+        <p class="text-sm text-gray-300 dark:text-gray-400">Jobs</p>
+        <p class="text-sm text-gray-300 dark:text-gray-400">Terms and Conditions</p>
+        <p class="text-sm text-gray-300 dark:text-gray-400">Travel, Inc.</p>        
     </footer>
     <div class="w-full h-16 bg-white fixed left-0 bottom-0 shadow-md flex space-x-8 items-center justify-center dark:bg-gray-800 lg:hidden" id="tab_bar">
         <a href="#home">
@@ -244,18 +239,20 @@
             </svg>
         </a>
 
-        <button>
+        <button id="toggle" onclick="toggleDark()">
             <svg width="30" height="30" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="fill-current text-principal" d="M15.293 11.293C13.8115 11.9631 12.161 12.1658 10.5614 11.8742C8.96175 11.5826 7.48895 10.8105 6.33919 9.66079C5.18944 8.51104 4.41734 7.03824 4.12574 5.4386C3.83415 3.83897 4.03691 2.18846 4.70701 0.70697C3.52758 1.23998 2.49505 2.05117 1.69802 3.07093C0.900987 4.09069 0.363244 5.28859 0.130924 6.56186C-0.101395 7.83512 -0.0213565 9.14574 0.364174 10.3813C0.749705 11.6168 1.42922 12.7404 2.34442 13.6556C3.25961 14.5708 4.38318 15.2503 5.61871 15.6358C6.85424 16.0213 8.16486 16.1014 9.43813 15.8691C10.7114 15.6367 11.9093 15.099 12.9291 14.302C13.9488 13.5049 14.76 12.4724 15.293 11.293Z" fill="#3F3F46"/>
             </svg>
         </button>
 
-        <a href="">
+        <a  href="">
             <svg width="30" height="30" viewBox="0 0 25 27" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path class="fill-current text-gray-200" fill-rule="evenodd" clip-rule="evenodd" d="M2.78225 17.6464C4.4799 15.2799 7.48651 13.4999 12.4999 13.4999C17.5132 13.4999 20.5199 15.2799 22.2175 17.6464C23.8582 19.9336 24.1196 22.5552 24.1248 24.0058C24.13 25.4645 22.9071 26.4166 21.6533 26.4166H3.34642C2.09262 26.4166 0.869709 25.4645 0.874956 24.0058C0.880174 22.5552 1.1415 19.9336 2.78225 17.6464Z" fill="#F2F2F2"/>
             <path class="fill-current text-gray-200" fill-rule="evenodd" clip-rule="evenodd" d="M12.5 10.9166C15.3535 10.9166 17.6667 8.60339 17.6667 5.74992C17.6667 2.89645 15.3535 0.583252 12.5 0.583252C9.64653 0.583252 7.33334 2.89645 7.33334 5.74992C7.33334 8.60339 9.64653 10.9166 12.5 10.9166Z" fill="#F2F2F2"/>
             </svg> 
         </a>
     </div>
+
+    <script src="./src/index.js"></script>
 </body>
 </html>

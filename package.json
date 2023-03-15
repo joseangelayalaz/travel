@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tw:build": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
-    "deploy": "gh-pages -d public"
+    "tw:dev": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --watch",
+    "tw:build": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/css/tailwind.css --minify"
   },
   "repository": {
     "type": "git",
